@@ -4,6 +4,8 @@
 #include <iostream>
 #include <fstream>
 
+#include "PNGWriter.h"
+
 using namespace std;
 
 
@@ -27,7 +29,9 @@ int main()
         }
     }
     
-    write_image_file("image.ppm", colour_buf, buf_size);
+    PNGWriter::write_file("image.png", IMAGE_WIDTH, IMAGE_HEIGHT, 3, colour_buf, buf_size);
+
+    //write_image_file("image.ppm", colour_buf, buf_size);
 
     return 0;
 }

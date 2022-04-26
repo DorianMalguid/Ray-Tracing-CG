@@ -5,6 +5,7 @@
 
 # Code output file
 *.ppm
+*.png
 
 # User-specific files
 *.rsuser
